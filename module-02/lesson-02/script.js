@@ -210,9 +210,22 @@ function fn9() {
   //   }
 
   // }
+
 //  Task 10
 // Кнопка .b-10 запускає функцію fn10. Функція повинна виводити в .out-10 парні роки від 1950 до 1970 включно.
 // Роздільник - знак підкреслення. Завдання вирішується через цикл, а парність - через крок (рівний 2).
+
+function fn10() {
+  let result = '';
+
+  for (let year = 1950; year <= 1970; year += 2) {
+    result += year + '_';
+  }
+
+  document.querySelector('.out-10').textContent = result;
+}
+
+document.querySelector('.b-10').addEventListener('click', fn10);
 
 //  Task 11
 // Кнопка .b-11 запускає функцію fn11. Функція повинна:
@@ -222,17 +235,49 @@ function fn9() {
 // В результаті повинно вийти так:
 //     one_3_4_two_
 
+function fn11() {
+  const divs11 = document.querySelectorAll('.div-11');
+  let result = '';
+
+  for (let i = 0; i < divs11.length; i++) {
+    result += divs11[i].innerHTML + '_';
+  }
+
+  document.querySelector('.out-11').textContent = result;
+}
+
+document.querySelector('.b-11').addEventListener('click', fn11);
+
+
 //  Task 12
 // Кнопка .b-12 запускає функцію fn12. Функція повинна:
 // - отримати всі div.div-12
 // - перебрати їх за допомогою циклу. Звернення до div виглядає так: elem[i]
 // - застосувати до кожного elem[i].style.background = ‘orange’
 
+function fn12() {
+  const elems = document.querySelectorAll('.div-12');
+
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].style.background = 'orange';
+  }
+}
+
+document.querySelector('.b-12').addEventListener('click', fn12);
+
+
 //  Task 13
 // За допомогою циклу привласніть всім input .i-13 value рівне:
 // - для першого  1
 // - для другого  2
 // - для третього 3
+
+const inputs13 = document.querySelectorAll('.i-13');
+
+for (let i = 0; i < inputs13.length; i++) {
+  inputs13[i].value = i + 1;
+}
+
 
 //  Task 14
 // Кнопка .b-14 запускає функцію fn14. Функція повинна:
@@ -241,7 +286,36 @@ function fn9() {
 // - вивести в .out-14 value вибраного input
 // Перевірити, чи вибраний елемент, можна за допомогою elem[i].checked.
 
+function fn14() {
+  const elems = document.querySelectorAll('.i-14');
+  let result = '';
+
+  for (let i = 0; i < elems.length; i++) {
+    if (elems[i].checked) {
+      result = elems[i].value;
+    }
+  }
+
+  document.querySelector('.out-14').textContent = result;
+}
+
+document.querySelector('.b-14').addEventListener('click', fn14);
+
+
 //  Task 15
 // Кнопка .b-15 запускає функцію fn15. Функція повинна виводити наступну послідовність в .out-15:
 // 10_0_9_1_8_2_7_3_6_4_5_5_4_6_3_7_2_8_1_9_0_10_
 // Підказка (10 - i) + '_' + i + '_'
+
+function fn15() {
+  let result = '';
+
+  for (let i = 0; i <= 10; i++) {
+    result += (10 - i) + '_' + i + '_';
+  }
+
+  document.querySelector('.out-15').textContent = result;
+}
+
+document.querySelector('.b-15').addEventListener('click', fn15);
+
