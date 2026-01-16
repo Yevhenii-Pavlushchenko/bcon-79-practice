@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 03. Lesson 02</title>
+    <title>Matrix</title>
     <link
       rel="icon"
       type="image/png"
@@ -28,7 +28,7 @@
   <body>
     <header>
       <div class="container container-small">
-        <h1 class="title">Module 03. Lesson 02</h1>
+        <h1 class="title">Matrix</h1>
         <h2 class="subtitle">
           Click on the down arrow and go to the problem solving
         </h2>
@@ -38,23 +38,18 @@
     </header>
 
     <main class="container">
-      <!-- Task 01 -->
+      <!-- Task 1 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 1.</p>
           </div>
           <div class="panel-body">
-            <p><b>Task 1.</b></p>
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>***_***_***_</pre>
             <p>
-              Напишіть функцію fn1, яка при натисканні кнопки виводить в .out-1
-              змінну a1.
-            </p>
-            <p class="cd">
-              let a1 = 8;<br />
-              function fn1() {<br />
-              }<br />
-              document.querySelector('.b-1').onclick = fn1; <br />
+              де зірочки малюються за допомогою внутрішнього циклу від 0 до 3, а
+              _ за допомогою зовнішнього.
             </p>
             <button class="button-primary b-1">Task-1</button>
           </div>
@@ -66,29 +61,27 @@
           </div>
         </div>
       </section>
-      <!-- Task 02 -->
+
+      <!-- Task 2 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 2.</p>
           </div>
           <div class="panel-body">
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              1<br />
+              *_*_*_<br />
+              2<br />
+              *_*_*_<br />
+              3<br />
+              *_*_*_<br />
+            </pre>
             <p>
-              Змінимо задачу 1. Зараз вона тільки виводить змінну в заздалегідь
-              заданий блок. Давайте зробимо так, щоб функція була більш гнучкою.
-              Нехай тепер функція fn2 повертає (return) змінну a2. Оскільки
-              функція повертає змінну, то ім'я функції з дужками (виклик
-              функції) можна вбудовувати у вирази. Зверніть увагу, як змінюється
-              виклик функції тепер.
-            </p>
-            <p class="cd">
-              let a2 = 8;<br />
-              function fn2() {<br />
-              &nbsp;// тут ваш код <br />
-              }<br />
-              document.querySelector('.b-2').onclick = function() {<br />
-              &nbsp;document.querySelector('.out-2').textContent = f2();<br />
-              }<br />
+              Вирішити задачу за допомогою вкладених циклів. Зовнішній цикл
+              виводить цифру і перенесення рядка br, внутрішній — *_, і після
+              цього зовнішній — знак перенесення.
             </p>
             <button class="button-primary b-2">Task-2</button>
           </div>
@@ -100,55 +93,47 @@
           </div>
         </div>
       </section>
-      <!-- Task 03 -->
+
+      <!-- Task 3 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 3.</p>
           </div>
           <div class="panel-body">
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              *_*_*_<br />
+              *_*_*_<br />
+              *_*_*_<br />
+              *_*_*_<br />
+            </pre>
             <p>
-              Наша попередня функція все ще сильно залежить від зовнішніх
-              змінних. Давайте зробимо її більш універсальною. Нехай функція fn3
-              приймає 2 аргументи і повертає (return) їх добуток. Допишіть код
-              функції так, щоб вона повертала добуток двох чисел, переданих їй
-              як аргументи a, b. Протестуємо функцію на двох прикладах за
-              допомогою кнопок .b-3-1 та .b-3-2.
+              Вирішити задачу за допомогою вкладених циклів. Внутрішній цикл
+              виводить *_, зовнішній цикл виводить перенесення рядка br.
             </p>
-            <p class="cd">
-              function fn3(a,b) {<br />
-              }<br />
-              document.querySelector('.b-3-1').onclick = function(){<br />
-              &nbsp; document.querySelector('.out-3-1').textContent =
-              fn3(3,4);<br />
-              }<br />
-              document.querySelector('.b-3-2').onclick = function(){<br />
-              &nbsp;document.querySelector('.out-3-2').textContent =
-              fn3(5,6);<br />
-              }<br />
-            </p>
-            <button class="button-primary b-3-1">button 3-1</button>
-            <button class="button-primary b-3-2">button 3-2</button>
+            <button class="button-primary b-3">Task-3</button>
           </div>
           <div class="panel-footer">
             <h6>Output</h6>
             <blockquote>
-              <div class="out-3-1"></div>
-              <div class="out-3-2"></div>
+              <div class="out-3"></div>
             </blockquote>
           </div>
         </div>
       </section>
-      <!-- Task 04 -->
+
+      <!-- Task 4 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 4.</p>
           </div>
           <div class="panel-body">
+            <pre>1_ 1*2*3*4*5* 2_ 1*2*3*4*5* 3_ 1*2*3*4*5*</pre>
             <p>
-              Напишіть функцію fn4, яка приймає ваш рік народження та обчислює
-              (повертає) ваш вік.
+              Зовнішній цикл виводить цифру і _, а внутрішній виводить від 1 до
+              5 із *.
             </p>
             <button class="button-primary b-4">Task-4</button>
           </div>
@@ -160,18 +145,23 @@
           </div>
         </div>
       </section>
-      <!-- Task 05 -->
+
+      <!-- Task 5 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 5.</p>
           </div>
           <div class="panel-body">
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              101010<br />
+              101010<br />
+              101010<br />
+            </pre>
             <p>
-              Напишіть функцію fn5, яка приймає ваше ім'я як параметр і повертає
-              (return) кількість символів у ньому, де name — прийняте як
-              параметр ім'я. Довжину (кількість символів) можна порахувати,
-              використовуючи властивість .length.
+              Вкладений цикл, залежно від парності k (лічильника циклу), малює
+              або 0, або 1. Зовнішній цикл — br.
             </p>
             <button class="button-primary b-5">Task-5</button>
           </div>
@@ -183,19 +173,20 @@
           </div>
         </div>
       </section>
-      <!-- Task 06 -->
+
+      <!-- Task 6 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 6.</p>
           </div>
           <div class="panel-body">
-            <p>
-              Напишіть функцію fn6, яка приймає 2 числа і повертає випадкове
-              ціле число від першого до другого прийнятого параметра. Увага, це
-              перша задача, рішення якої потрібно знайти в google. Не пишіть
-              рішення самі!
-            </p>
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              10x01x<br />
+              10x01x<br />
+              10x01x<br />
+            </pre>
             <button class="button-primary b-6">Task-6</button>
           </div>
           <div class="panel-footer">
@@ -206,64 +197,73 @@
           </div>
         </div>
       </section>
-      <!-- Task 07 -->
+
+      <!-- Task 7 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 7.</p>
           </div>
           <div class="panel-body">
-            <p>
-              Напишіть функцію fn7, яка повертає випадковий колір у форматі
-              rgb(x,y,z) (рядок). Де x, y, z — випадкові числа в діапазоні [0,
-              255].
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <p class="cd">
+              *<br />
+              **<br />
+              ***<br />
+              ****<br />
             </p>
             <button class="button-primary b-7">Task-7</button>
           </div>
           <div class="panel-footer">
             <h6>Output</h6>
             <blockquote>
-              <div class="out-7">Цей блок змінить колір</div>
+              <div class="out-7"></div>
             </blockquote>
           </div>
         </div>
       </section>
-      <!-- Task 08 -->
+
+      <!-- Task 8 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 8.</p>
           </div>
           <div class="panel-body">
-            <p>
-              Напишіть функцію fn8, яка приймає рядок як параметр і повертає
-              результат з очищеними пробілами на початку і в кінці рядка. Тобто
-              приймає _hello_ (де знак _ символізує пробіл), а повертає hello.
-              Для видалення пробілів використовуйте trim().
-            </p>
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              *****<br />
+              ****<br />
+              ***<br />
+              **<br />
+              *<br />
+            </pre>
             <button class="button-primary b-8">Task-8</button>
           </div>
           <div class="panel-footer">
             <h6>Output</h6>
             <blockquote>
-              <div class="out-8">
-                У цій задачі виведення результату — в консоль!
-              </div>
+              <div class="out-8"></div>
             </blockquote>
           </div>
         </div>
       </section>
-      <!-- Task 09 -->
+
+      <!-- Task 9 -->
       <section>
         <div class="panel">
           <div class="panel-head">
             <p class="panel-title">Task 9.</p>
           </div>
           <div class="panel-body">
-            <p>
-              Напишіть функцію fn9, яка приймає число і повертає true, якщо
-              число парне, і false, якщо непарне.
-            </p>
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              1_<br />
+              1_2_<br />
+              1_2_3_<br />
+              1_2_3_4_<br />
+              1_2_3_4_5_<br />
+            </pre>
             <button class="button-primary b-9">Task-9</button>
           </div>
           <div class="panel-footer">
@@ -274,6 +274,7 @@
           </div>
         </div>
       </section>
+
       <!-- Task 10 -->
       <section>
         <div class="panel">
@@ -281,10 +282,14 @@
             <p class="panel-title">Task 10.</p>
           </div>
           <div class="panel-body">
-            <p>
-              Створіть функцію fn10, яка приймає 2 числа і повертає більше з
-              них. У разі рівності — перше.
-            </p>
+            <p>За допомогою вкладених циклів намалюйте рядок:</p>
+            <pre>
+              01_02_03_04_05_06_07_08_09_10_<br />
+              11_12_13_14_15_16_17_18_19_20_<br />
+              21_22_23_24_25_26_27_28_29_30_<br />
+              31_32_33_34_35_36_37_38_39_40_<br />
+              41_42_43_44_45_46_47_48_49_50_<br />
+            </pre>
             <button class="button-primary b-10">Task-10</button>
           </div>
           <div class="panel-footer">
@@ -297,6 +302,6 @@
       </section>
     </main>
 
-    <script type="module" src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
