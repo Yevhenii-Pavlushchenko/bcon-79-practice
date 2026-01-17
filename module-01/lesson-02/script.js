@@ -1,4 +1,80 @@
 //1
+
+const a = 7;
+const b = 9;
+const result = a * b;
+console.log("🚀 ~ result:", result)
+
+
+//2
+const out2 = document.querySelector(".out-2");
+const c = 7;
+const d = 9;
+out2.textContent = c / d;
+console.log("🚀 ~ out2:", out2)
+
+//3
+const e = 3; 
+const f = 5; 
+const out3 = document.querySelector(".out-3");
+out3.textContent = e + f;
+console.log(out3)
+
+//4
+const e1 = '3'; 
+const f1 = 5;
+const out4= document.querySelector(".out-4");
+out4.textContent = e1 + f1;
+console.log("🚀 ~ out4:", out4)
+
+//5
+const e2 = 3;
+const f2 = 0;
+const out5 = document.querySelector(".out-5");
+console.log("🚀 ~ out5:", out5);
+out5.textContent = e2 / f2;
+
+//6
+const e3 = 3;
+const f3 = "Hello";
+const out6 = document.querySelector(".out-6");
+out6.textContent = e3 + f3;
+console.log("🚀 ~ out6:", out6)
+
+//7
+const e4 = 3;
+const f4 = "Hello";
+const out7 = document.querySelector(".out-7");
+out7.textContent = e4 * f4;
+console.log("🚀 ~ out7:", out7)
+
+
+//8
+const btn8 = document.querySelector(".b-8");
+const input8 = document.querySelector(".i-8");
+const out8 = document.querySelector(".out-8");
+console.log("🚀 ~ out8:", out8)
+
+btn8.onclick = fn8;
+
+function fn8() {
+  console.log((out8.textContent = input8.value));
+  out8.textContent = input8.value;
+  input8.value = "";
+}
+
+
+
+
+
+
+це треба перевирішити 
+
+
+
+//222222222222222222222222222222 HW 
+
+//1
 const a = 7;
 const b = 9;
 const result = a * b;
