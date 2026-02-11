@@ -5,6 +5,7 @@ export function renderBooks(books = [], el) {
   const markup = normalizedBooks
     .map(
       ({
+        _id,
         title,
         author,
         price,
@@ -13,7 +14,7 @@ export function renderBooks(books = [], el) {
         book_image_height,
       }) => {
         return `
-        <article class="books-item">
+        <article class="books-item js-book-card" data-book-id="${_id}" >
             <div class="books-item-cover">
                 <img class="books-item-ill" src="${book_image}" alt="${title}" width="${book_image_width}" height="${book_image_height}" />
             </div>
