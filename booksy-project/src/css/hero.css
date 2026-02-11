@@ -1,6 +1,7 @@
 
 .hero{
     padding: 0 0 32px 0;
+
 }
  
 .hero-swiper .swiper-slide{
@@ -8,8 +9,44 @@
     border-radius: 16px;
 }
 .swiper-wrapper{
- margin-bottom: 24px;   
+ margin-bottom: 24px;
+ /* height: 395px; */
 }
+
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide-title {
+    position: absolute;
+    top: 155px;
+    left: 56px;
+
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    max-width: 591px;
+    color: #fff;
+}
+.swiper-slide-btn{
+    position: absolute;
+    top: 299px;
+    left: 56px;
+
+    border: 1px solid #e15d05;
+    border-radius: 4px;
+    padding: 8px 20px;
+    width: 227px;
+    height: 40px;
+    background: #e15d05;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+            
+}
+
 .hero-bottom{
     display: flex;
     align-items: center;
