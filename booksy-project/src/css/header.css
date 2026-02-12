@@ -8,7 +8,10 @@
 .nav-list{
   display: flex;
 }
-
+.nav-right-wraper{
+  display: flex;
+  gap: 32px;
+}
 .nav-list-item{
   font-weight: 400;
   font-size: 16px;
@@ -20,4 +23,18 @@
 
 .nav-list-item:last-child{
   margin-right: 0;
+}
+
+.header .btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  color: #e15d05;
+
+  svg {
+    fill: transparent;
+    stroke: #e15d05;
+    stroke-width: 25;
+  }
 }

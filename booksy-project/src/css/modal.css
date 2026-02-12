@@ -2,7 +2,7 @@
     padding: 64px;
     background: #fceee6;
     border-radius: 16px;
-    max-width: 900px;
+    max-width: 1300px;
 }
 .book-modal-content {
     display: flex;
@@ -45,7 +45,7 @@
     margin-bottom: 24px;
 }
 
-.button-wrapper {
+.btn-wrapper {
     display: flex;
     gap: 24px;
     margin-bottom: 32px;
@@ -60,7 +60,7 @@
     border: 1px solid #e15d05;
     border-radius: 4px;
     padding: 12px 24px;
-    max-width: 309px;
+    width: 309px;
     height: 48px;
     background: #e15d05;
     font-family: "Rubik", sans-serif;
@@ -79,7 +79,7 @@
     border: 1px solid #0b0500;
     border-radius: 4px;
     padding: 12px 24px;
-    max-width: 309px;
+    width: 309px;
     height: 48px;
     font-family: "Rubik", sans-serif;
     font-weight: 400;

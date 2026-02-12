@@ -1,15 +1,17 @@
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
-// import Swiper and modules styles
+// import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+// init Swiper:
 
-const heroSliderOpyions = {
-  spaceBetween: 16,
+const heroSliderOptions = {
   modules: [Navigation],
   navigation: {
     nextEl: ".hero-btn-next",
     prevEl: ".hero-btn-prev",
   },
+  spaceBetween: 20,
 };
-const heroSlider = new Swiper(".hero-swiper", heroSliderOpyions);
+
+const heroSlider = new Swiper(".hero-slider", heroSliderOptions);

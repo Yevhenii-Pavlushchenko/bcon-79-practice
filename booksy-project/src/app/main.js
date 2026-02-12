@@ -1,6 +1,6 @@
 import { initCategories, initBooks } from "./utils/init";
-import "./components/slider.js";
-import "./components/modal.js";
+import "./components/slider";
+import "./components/modal";
 
 initCategories();
 initBooks();
