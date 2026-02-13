@@ -1,8 +1,8 @@
 import { renderCategories } from "../render/categories";
 import refs from "./refs";
 import { fetchBookCategories } from "../services/getBooksCategories";
-import { fetchBooks } from "../services/fetchBooks";
 import { renderBooks } from "../render/books";
+import { fetchBooksByCategory } from "../services/fetchBooksByCategory";
 
 export function initCategories() {
   fetchBookCategories().then(data => {
@@ -11,7 +11,7 @@ export function initCategories() {
 }
 
 export function initBooks() {
-  fetchBooks().then(data => {
+  fetchBooksByCategory().then(data => {
     renderBooks(data, refs.booksList);
   });
 }

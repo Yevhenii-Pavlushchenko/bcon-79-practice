@@ -1,7 +1,12 @@
 import { normalizeBooks } from "../utils/normalizeBooks";
 
-export function renderBooks(books = [], el) {
-  const normalizedBooks = normalizeBooks(books);
+export function renderBooks(books = [], el, all = true) {
+  const normalizedBooks = [];
+  if (all) {
+    normalizedBooks.push(...normalizeBooks(books));
+  } else {
+    normalizedBooks.push(...books);
+  }
   const markup = normalizedBooks
     .map(
       ({
