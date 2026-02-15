@@ -25,6 +25,13 @@
   margin-right: 0;
 }
 
+.nav-list-item:hover {
+  color: #e15d05;
+}
+.nav-list-item:focus{
+  color: #e15d05;
+}
+
 .header .btn {
   width: 32px;
   height: 32px;
