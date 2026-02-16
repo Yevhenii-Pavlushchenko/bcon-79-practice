@@ -8,9 +8,7 @@ export function request(endpoint, options = {}, method = "get") {
     url: endpoint,
     method,
     ...options,
-  }).then(response => {
-    console.log(response.data);
-
-    return response.data;
-  });
+  })
+    .then(response => response.data)
+    .catch(error => console.log(error));
 }
