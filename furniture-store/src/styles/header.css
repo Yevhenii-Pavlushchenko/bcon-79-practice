@@ -4,17 +4,22 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-logo {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+}
+.nav-wrapper{
+display: flex;
+justify-content: flex-end;
 }
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  gap: 32px;
+  margin-right: 32px;
+
 }
 .nav-link {
   position: relative;
@@ -41,4 +46,23 @@
 }
 .nav-link.active::after {
   background: #747bff;
+}
+
+.header-btn{
+  border-radius: 100px;
+    padding: 8px 20px;
+    width: 129px;
+    height: 42px;
+
+    box-shadow: 0 1px 2px 0 rgba(8, 12, 9, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(8, 12, 9, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+      background: #6b0609;
+      /* font-size: 16px; */
+      font-weight: 500;
+      color: #fff;
+      line-height: 160%;
+      &:hover,
+      &:focus{
+        opacity: 0.5;
+      }
+
 }
